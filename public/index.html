@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel=stylesheet href="css/estilo.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+  <title>Device Status</title>
+</head>
+<body>
+  <header>
+    <h1>Gerfactory</h1>
+    <button type="button">SAIR</button>
+  </header>
+  <section>
+    <div id="barra-superior">
+      <span id="bancada"><strong>Bancada: </strong>[nome_bancada]</span>
+      <span id="dispositivo"><strong>Dispositivo: </strong>GerSAT</span>
+      <button type="button">Alterar Bancada</button>
+    </div>
+    <div id="entrada"></div>
+    <div id="deviceList">
+      <div id="d1">
+        <h4>DISPOSITVO 1</h4>
+        <ul>
+          <br>
+          <li><input type="text" placeholder="INSIRA O NÚMERO DE SÉRIE GERTEC"></li>
+          <br>
+          <li><input type="text" placeholder="INSIRA O NÚMERO DE SÉRIE SEFAZ"></li>
+          <br>
+          <button type="button" class="test" onclick="realizarTeste(0)">Iniciar</button>
+        </ul>
+      </div>
+      <div id="d2">
+        <h4>DISPOSITVO 2</h4>
+        <ul>
+          <br>
+          <li><input type="text" placeholder="INSIRA O NÚMERO DE SÉRIE GERTEC"></li>
+          <br>
+          <li><input type="text" placeholder="INSIRA O NÚMERO DE SÉRIE SEFAZ"></li>
+          <br>
+          <button type="button" class="test" onclick="realizarTeste(1)">Iniciar</button>
+        </ul>
+      </div>
+      <div id="d3">
+        <h4>DISPOSITVO 3</h4>
+        <ul>
+          <br>
+          <li><input type="text" placeholder="INSIRA O NÚMERO DE SÉRIE GERTEC"></li>
+          <br>
+          <li><input type="text" placeholder="INSIRA O NÚMERO DE SÉRIE SEFAZ"></li>
+          <br>
+          <button type="button" class="test" onclick="realizarTeste(2)">Iniciar</button>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    Copyright &copy; GerTec
+  </footer>
+</body>
+</html>
